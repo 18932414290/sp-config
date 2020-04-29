@@ -20,4 +20,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: bus-refresh         #2.0 由refresh 改 bus-refresh
