@@ -15,3 +15,9 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka
     registry-fetch-interval-seconds: 30 #拉取注册信息间隔时间， 默认30
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
