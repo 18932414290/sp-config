@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: item-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka #默认位置，可以更改为具体的位置，表示eureka 服务部署的位置，需要云服务器提供
+  instance:
+    lease-renewal-interval-in-seconds: 30 #心跳间隔时间 默认30秒

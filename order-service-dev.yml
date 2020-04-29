@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: order-service
+server:
+  port: 8201
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 30 # 心跳间隔时间 默认30
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka
+    registry-fetch-interval-seconds: 30 #拉取注册信息间隔时间，默认30
+
+feign:
+  hystrix:
+    enabled: true          #开启ribbon 和 hystrix
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #暴露监控的端点
