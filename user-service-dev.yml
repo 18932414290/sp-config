@@ -4,7 +4,11 @@ sp:              #�Զ������� �ṩ���Ե��û����
 spring:
   application:
     name: user-service
-
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
 server:
   port: 8101
 
